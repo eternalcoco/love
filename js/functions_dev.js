@@ -5,7 +5,7 @@ var clientHeight = $(window).height();
 
 $(function () {
     // setup garden
-	$loveHeart = $("#loveHeart");
+	$Heart = $("#loveHeart");
 	var offsetX = $loveHeart.width() / 2;
 	var offsetY = $loveHeart.height() / 2 - 55;
     $garden = $("#garden");
@@ -93,6 +93,7 @@ function startHeartAnimation() {
 })(jQuery);
 
 function timeElapse(date){
+	console.log(date);return false;
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
 	var days = Math.floor(seconds / (3600 * 24));

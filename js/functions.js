@@ -100,7 +100,7 @@ function timeElapse(c) {
         d = "0" + d
     }
     f = f % 60;
-    f = parseInt(f) 
+    f = parseInt(f)
     if (f < 10) {
         f = "0" + f
     }
